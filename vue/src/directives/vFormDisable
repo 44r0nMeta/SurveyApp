@@ -1,0 +1,15 @@
+export const vFormDisable = {
+    mounted(el, binding) {
+
+        binding.value = binding.value || false
+        if(binding.value){
+        var elements = el.elements;
+        for (var i = 0, len = elements.length; i < len; ++i) {
+            elements[i].disabled = true;
+        }
+       }
+    }
+
+}
+
+
